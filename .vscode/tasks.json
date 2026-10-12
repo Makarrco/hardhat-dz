@@ -1,0 +1,38 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hardhat: Init",
+      "type": "shell",
+      "command": "npx hardhat --init",
+      "problemMatcher": []
+    },
+    {
+      "label": "Hardhat: Compile",
+      "type": "shell",
+      "command": "npx hardhat compile",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Hardhat: Test",
+      "type": "shell",
+      "command": "npx hardhat test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Hardhat: Start Local Blockchain",
+      "type": "shell",
+      "command": "npx hardhat node",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Hardhat: Deploy Counter",
+      "type": "shell",
+      "command": "npx hardhat ignition deploy ignition/modules/Counter.ts --network localhost",
+      "problemMatcher": []
+    }
+  ]
+}
